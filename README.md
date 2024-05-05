@@ -6,10 +6,10 @@ The project aims to simulate an adiabatic supersonic flow over a symmetrical dia
 
 The region surrounding the airfoil is divided into 7 regions as follows:
 
-*Region 1 - Upstream of the airfoil
-*Region 2 - Leading side of the airfoil's upper surface
-*Region 3 - Trailing side of the airfoil's upper surface
-*Region 4 - Leading side of the airfoil's lower surface
-*Region 5 - Trailing side of the airfoil's lower surface
-*Region 6 - Region behind the airfoil's trailing edge and above the slip line
-*Region 7 - Region behind the airfoil's trailing edge and below the slip line
++ Region 1 - Upstream of the airfoil
++ Region 2 - Leading side of the airfoil's upper surface
++ Region 3 - Trailing side of the airfoil's upper surface
++ Region 4 - Leading side of the airfoil's lower surface
++ Region 5 - Trailing side of the airfoil's lower surface
++ Region 6 - Region behind the airfoil's trailing edge and above the slip line
++ Region 7 - Region behind the airfoil's trailing edge and below the slip line
