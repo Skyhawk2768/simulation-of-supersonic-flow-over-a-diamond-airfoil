@@ -677,6 +677,21 @@ def calculate():
 
                 pass;
 
+        p2 = float(p2);
+        p3 = float(p3);
+        p4 = float(p4);
+        p5 = float(p5);
+
+        t2 = float(t2);
+        t3 = float(t3);
+        t4 = float(t4);
+        t5 = float(t5);
+
+        m2 = float(m2);
+        m3 = float(m3);
+        m4 = float(m4);
+        m5 = float(m5);
+
         if flag == 0:
 
                 if theta == 0 and aoa == 0:
@@ -720,9 +735,16 @@ def calculate():
                         eqn9 = m6n - sympy.sqrt(((2/(gamma - 1)) + (m3n**2))/((2*gamma/(gamma - 1))*(m3n**2) - 1));
                         eqn10 = omega(m7) - omega(m5) - exp5*sympy.pi/180;
 
+                        for ele in x0:
+
+                                print(type(ele))
+
                         for iter_n in range(100):
 
                             subs_dict = {'p6':x0[0],'t6':x0[1],'m6':x0[2],'p7':x0[3],'t7':x0[4],'m7':x0[5],'theta3':x0[6],'beta3':x0[7],'exp5':x0[8],'phi':x0[9]};
+
+                            for key in subs_dict.keys():
+                                    subs_dict[key] = float(subs_dict[key])
 
                             J = numpy.array([[eqn1.diff('p6').evalf(subs = subs_dict),eqn1.diff('t6').evalf(subs = subs_dict),eqn1.diff('m6').evalf(subs = subs_dict),eqn1.diff('p7').evalf(subs = subs_dict),eqn1.diff('t7').evalf(subs = subs_dict),eqn1.diff('m7').evalf(subs = subs_dict),eqn1.diff('theta3').evalf(subs = subs_dict),eqn1.diff('beta3').evalf(subs = subs_dict),eqn1.diff('exp5').evalf(subs = subs_dict),eqn1.diff('phi').evalf(subs = subs_dict)],
                                              [eqn2.diff('p6').evalf(subs = subs_dict),eqn2.diff('t6').evalf(subs = subs_dict),eqn2.diff('m6').evalf(subs = subs_dict),eqn2.diff('p7').evalf(subs = subs_dict),eqn2.diff('t7').evalf(subs = subs_dict),eqn2.diff('m7').evalf(subs = subs_dict),eqn2.diff('theta3').evalf(subs = subs_dict),eqn2.diff('beta3').evalf(subs = subs_dict),eqn2.diff('exp5').evalf(subs = subs_dict),eqn2.diff('phi').evalf(subs = subs_dict)],
@@ -795,6 +817,9 @@ def calculate():
                         for iter_n in range(100):
 
                             subs_dict = {'p6':x0[0],'t6':x0[1],'m6':x0[2],'p7':x0[3],'t7':x0[4],'m7':x0[5],'theta5':x0[6],'beta5':x0[7],'exp3':x0[8],'phi':x0[9]};
+
+                            for key in subs_dict.keys():
+                                    subs_dict[key] = float(subs_dict[key])
 
                             J = numpy.array([[eqn1.diff('p6').evalf(subs = subs_dict),eqn1.diff('t6').evalf(subs = subs_dict),eqn1.diff('m6').evalf(subs = subs_dict),eqn1.diff('p7').evalf(subs = subs_dict),eqn1.diff('t7').evalf(subs = subs_dict),eqn1.diff('m7').evalf(subs = subs_dict),eqn1.diff('theta5').evalf(subs = subs_dict),eqn1.diff('beta5').evalf(subs = subs_dict),eqn1.diff('exp3').evalf(subs = subs_dict),eqn1.diff('phi').evalf(subs = subs_dict)],
                                              [eqn2.diff('p6').evalf(subs = subs_dict),eqn2.diff('t6').evalf(subs = subs_dict),eqn2.diff('m6').evalf(subs = subs_dict),eqn2.diff('p7').evalf(subs = subs_dict),eqn2.diff('t7').evalf(subs = subs_dict),eqn2.diff('m7').evalf(subs = subs_dict),eqn2.diff('theta5').evalf(subs = subs_dict),eqn2.diff('beta5').evalf(subs = subs_dict),eqn2.diff('exp3').evalf(subs = subs_dict),eqn2.diff('phi').evalf(subs = subs_dict)],
@@ -956,6 +981,9 @@ def calculate():
 
                                         subs_dict = {'p6':x0[0],'t6':x0[1],'m6':x0[2],'p7':x0[3],'t7':x0[4],'m7':x0[5],'theta5':x0[6],'beta5':x0[7],'exp3':x0[8],'phi':x0[9]};
 
+                                        for key in subs_dict.keys():
+                                                subs_dict[key] = float(subs_dict[key])
+
                                         J = numpy.array([[eqn1.diff('p6').evalf(subs = subs_dict),eqn1.diff('t6').evalf(subs = subs_dict),eqn1.diff('m6').evalf(subs = subs_dict),eqn1.diff('p7').evalf(subs = subs_dict),eqn1.diff('t7').evalf(subs = subs_dict),eqn1.diff('m7').evalf(subs = subs_dict),eqn1.diff('theta5').evalf(subs = subs_dict),eqn1.diff('beta5').evalf(subs = subs_dict),eqn1.diff('exp3').evalf(subs = subs_dict),eqn1.diff('phi').evalf(subs = subs_dict)],
                                              [eqn2.diff('p6').evalf(subs = subs_dict),eqn2.diff('t6').evalf(subs = subs_dict),eqn2.diff('m6').evalf(subs = subs_dict),eqn2.diff('p7').evalf(subs = subs_dict),eqn2.diff('t7').evalf(subs = subs_dict),eqn2.diff('m7').evalf(subs = subs_dict),eqn2.diff('theta5').evalf(subs = subs_dict),eqn2.diff('beta5').evalf(subs = subs_dict),eqn2.diff('exp3').evalf(subs = subs_dict),eqn2.diff('phi').evalf(subs = subs_dict)],
                                              [eqn3.diff('p6').evalf(subs = subs_dict),eqn3.diff('t6').evalf(subs = subs_dict),eqn3.diff('m6').evalf(subs = subs_dict),eqn3.diff('p7').evalf(subs = subs_dict),eqn3.diff('t7').evalf(subs = subs_dict),eqn3.diff('m7').evalf(subs = subs_dict),eqn3.diff('theta5').evalf(subs = subs_dict),eqn3.diff('beta5').evalf(subs = subs_dict),eqn3.diff('exp3').evalf(subs = subs_dict),eqn3.diff('phi').evalf(subs = subs_dict)],
@@ -1017,6 +1045,9 @@ def calculate():
                                 for iter_n in range(100):
 
                                         subs_dict = {'p6':x0[0],'t6':x0[1],'m6':x0[2],'p7':x0[3],'t7':x0[4],'m7':x0[5],'beta3':x0[6],'beta5':x0[7],'theta3':x0[8],'theta5':x0[9]};
+
+                                        for key in subs_dict.keys():
+                                                subs_dict[key] = float(subs_dict[key])
                                         
                                         J = numpy.array([[eqn1.diff('p6').evalf(subs = subs_dict),eqn1.diff('t6').evalf(subs = subs_dict),eqn1.diff('m6').evalf(subs = subs_dict),eqn1.diff('p7').evalf(subs = subs_dict),eqn1.diff('t7').evalf(subs = subs_dict),eqn1.diff('m7').evalf(subs = subs_dict),eqn1.diff('beta3').evalf(subs = subs_dict),eqn1.diff('beta5').evalf(subs = subs_dict),eqn1.diff('theta3').evalf(subs = subs_dict),eqn1.diff('theta5').evalf(subs = subs_dict)],
                                                          [eqn2.diff('p6').evalf(subs = subs_dict),eqn2.diff('t6').evalf(subs = subs_dict),eqn2.diff('m6').evalf(subs = subs_dict),eqn2.diff('p7').evalf(subs = subs_dict),eqn2.diff('t7').evalf(subs = subs_dict),eqn2.diff('m7').evalf(subs = subs_dict),eqn2.diff('beta3').evalf(subs = subs_dict),eqn2.diff('beta5').evalf(subs = subs_dict),eqn2.diff('theta3').evalf(subs = subs_dict),eqn2.diff('theta5').evalf(subs = subs_dict)],
@@ -1099,6 +1130,9 @@ def calculate():
                                 for iter_n in range(100):
 
                                     subs_dict = {'p6':x0[0],'t6':x0[1],'m6':x0[2],'p7':x0[3],'t7':x0[4],'m7':x0[5],'theta3':x0[6],'beta3':x0[7],'exp5':x0[8],'phi':x0[9]};
+
+                                    for key in subs_dict.keys():
+                                            subs_dict[key] = float(subs_dict[key])
 
                                     J = numpy.array([[eqn1.diff('p6').evalf(subs = subs_dict),eqn1.diff('t6').evalf(subs = subs_dict),eqn1.diff('m6').evalf(subs = subs_dict),eqn1.diff('p7').evalf(subs = subs_dict),eqn1.diff('t7').evalf(subs = subs_dict),eqn1.diff('m7').evalf(subs = subs_dict),eqn1.diff('theta3').evalf(subs = subs_dict),eqn1.diff('beta3').evalf(subs = subs_dict),eqn1.diff('exp5').evalf(subs = subs_dict),eqn1.diff('phi').evalf(subs = subs_dict)],
                                                      [eqn2.diff('p6').evalf(subs = subs_dict),eqn2.diff('t6').evalf(subs = subs_dict),eqn2.diff('m6').evalf(subs = subs_dict),eqn2.diff('p7').evalf(subs = subs_dict),eqn2.diff('t7').evalf(subs = subs_dict),eqn2.diff('m7').evalf(subs = subs_dict),eqn2.diff('theta3').evalf(subs = subs_dict),eqn2.diff('beta3').evalf(subs = subs_dict),eqn2.diff('exp5').evalf(subs = subs_dict),eqn2.diff('phi').evalf(subs = subs_dict)],
