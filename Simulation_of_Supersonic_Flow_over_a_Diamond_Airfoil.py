@@ -2,7 +2,6 @@ import math;
 import numpy;
 import scipy;
 import sympy
-import matplotlib.pyplot
 
 from tkinter import Tk, Label, Entry, Button, Frame;
 from tkinter import messagebox;
