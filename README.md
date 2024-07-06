@@ -13,3 +13,7 @@ The region surrounding the airfoil is divided into 7 regions as follows:
 + Region 5 - Trailing side of the airfoil's lower surface
 + Region 6 - Region behind the airfoil's trailing edge and above the slip line
 + Region 7 - Region behind the airfoil's trailing edge and below the slip line
+
+## References
+
++ Modern Compressible Flow - With Historical Perspective, by John D. Anderson
