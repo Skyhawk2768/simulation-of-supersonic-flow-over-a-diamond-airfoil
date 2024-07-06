@@ -734,9 +734,6 @@ def calculate():
                         eqn9 = m6n - sympy.sqrt(((2/(gamma - 1)) + (m3n**2))/((2*gamma/(gamma - 1))*(m3n**2) - 1));
                         eqn10 = omega(m7) - omega(m5) - exp5*sympy.pi/180;
 
-                        for ele in x0:
-
-                                print(type(ele))
 
                         for iter_n in range(100):
 
