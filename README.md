@@ -10,13 +10,13 @@ and regions behind the airfoil’s trailing edge. The airfoil surface is divided
 regions, and the region behind the airfoil’s trailing edge is divided into two. In all, the
 region surrounding the airfoil is divided into seven.
 
-+Region 1 - Upstream of the airfoil
-+Region 2 - Leading side of the upper surface
-+Region 3 - Trailing side of the upper surface
-+Region 4 - Leading side of the lower surface
-+Region 5 - Trailing side of the lower surface
-+Region 6 - Behind the airfoil’s trailing edge and above the slip line 
-+Region 7 - Behind the airfoil’s trailing edge and below the slip line
++ Region 1 - Upstream of the airfoil
++ Region 2 - Leading side of the upper surface
++ Region 3 - Trailing side of the upper surface
++ Region 4 - Leading side of the lower surface
++ Region 5 - Trailing side of the lower surface
++ Region 6 - Behind the airfoil’s trailing edge and above the slip line 
++ Region 7 - Behind the airfoil’s trailing edge and below the slip line
 
 The flow properties calculated for these regions are pressure, temperature, and Mach
 number. The input parameters are the airfoil’s angle of attack, its half-wedge angle,
